@@ -40,9 +40,11 @@ similarity matrix of network nodes? }
 A matrix of the same dimensions as \code{datExpr}, containing non-negative weights. Only used with Pearson
 correlation.}
 
+#----------------------------------------------------------------------------------------------------------------------
   \item{similarity}{ similarity matrix: a symmetric matrix with entries between 0 and 1 and unit diagonal. The only
 transformation applied to \code{similarity} is raising it to a power. }
-
+#----------------------------------------------------------------------------------------------------------------------
+  
   \item{RsquaredCut}{ desired minimum scale free topology fitting index \eqn{R^2}. }
 
   \item{powerVector}{ a vector of soft thresholding powers for which the scale free topology fit indices
@@ -77,6 +79,7 @@ progressively more and more verbose. }
   \item{indent}{ indentation for diagnostic messages. Zero means no indentation, each unit adds
 two spaces. }
 }
+#----------------------------------------------------------------------------------------------------------------------
 \details{
   The function calculates weighted networks either by
 interpreting \code{data} directly as similarity, or first transforming it to similarity of the type
@@ -84,7 +87,7 @@ specified by \code{networkType}.
 The weighted networks are obtained by raising the similarity to the powers given in \code{powerVector}. 
 For each power the scale free topology fit index is calculated
 and returned along with other information on connectivity.
-
+#----------------------------------------------------------------------------------------------------------------------
  
 
 On systems with multiple cores or processors, 
