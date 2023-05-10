@@ -81,6 +81,11 @@ pickHardThreshold.fromSimilarity=function (similarity,
                     nBreaks = nBreaks, corFnc = "I", corOptions = "");
 }
 
+
+
+#--------------------------------------------------------------------
+# I wanna change the similarity 
+# link to this Rmarkdown
 pickSoftThreshold.fromSimilarity = function (similarity, 
     RsquaredCut = 0.85, powerVector = c(seq(1, 10, by = 1), seq(12, 20, by = 2)), 
     removeFirst = FALSE, nBreaks = 10, blockSize = 1000,
